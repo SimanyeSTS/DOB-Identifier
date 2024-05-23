@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOB Identifier</title>
+    <title>ID Number Checker</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <form id="DOB">
-        <h1>DOB Identifier</h1>
-        <br>
-        <div class="input">
-            <input type="number" id="IdInput" placeholder="Enter SA ID Number">
-        </div>
-        <button type="button" onclick(Submit)>Submit</button>
-
-        <div id="Result">
-            <input type="text" readonly placeholder="Results To Be Displayed Here">
-        </div>
-    </form>
-
-   
-   
-    
+    <div class="container">
+        <h1>ID Number Checker</h1>
+        <form id="idForm">
+            <label for="idNumber">Enter your 13-digit ID number:</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
     <script src="script/script.js"></script>
 </body>
 </html>
